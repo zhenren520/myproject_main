@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" >
+
+    <!-- android:visibility 隐藏域 -->
+
+    <TextView
+        android:id="@+id/contentId"
+        android:layout_width="0px"
+        android:layout_height="0px" />
+
+    <TextView
+        android:id="@+id/addDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="111"
+        android:textColor="#B5B5B5" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addDate"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="111"
+        android:textColor="#7C7C7C" />
+
+    <!--
+          ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_centerHorizontal="true"
+        /
+    -->
+
+    <TextView
+        android:id="@+id/textViewContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="#B5B5B5" />
+
+    <com.example.myproject.picbrowse.NoScrollGridView
+        android:id="@+id/gridview"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewContent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:columnWidth="70dp"
+        android:gravity="center"
+        android:horizontalSpacing="2.5dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2.5dp" />
+
+    <!-- 当距离下边距距离无效，则可加此进行进行间隔 -->
+    <View
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:layout_below="@id/gridview" />
+
+</RelativeLayout>

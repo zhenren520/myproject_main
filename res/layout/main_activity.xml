@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 用于放列表等fragment用于切换 -->
+
+    <FrameLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#E0E0E0"
+        android:layout_weight="9" >
+    </FrameLayout>
+
+    <!-- 安置按钮 -->
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/frame_style"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/bottomItemCurrentBg1"
+            style="@style/main_bottom_item" >
+
+            <RadioButton
+                android:id="@+id/home_button"
+                style="@style/footbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawableTop="@drawable/tab_ic_home_highlight" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomItemCurrentBg2"
+            style="@style/main_bottom_item" 
+            >
+
+            <RadioButton
+                android:id="@+id/my1_button"
+                style="@style/footbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawableTop="@drawable/ic_launcher" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomItemCurrentBg3"
+            style="@style/main_bottom_item" >
+
+            <RadioButton
+                android:id="@+id/my2_button"
+                style="@style/footbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawableTop="@drawable/java" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomItemCurrentBg4"
+            style="@style/main_bottom_item" >
+
+            <RadioButton
+                android:id="@+id/my3_button"
+                style="@style/footbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawableTop="@drawable/katuberling" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomItemCurrentBg5"
+            style="@style/main_bottom_item" >
+
+            <RadioButton
+                android:id="@+id/my4_button"
+                style="@style/footbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawableTop="@drawable/kuser" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

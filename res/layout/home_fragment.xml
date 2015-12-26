@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        <!-- ListFragment对应的android:id值固定为"@id/android:list"
+        ListFragment的布局默认包含一个list view。
+        因此，在ListFragment对应的布局文件中，
+        必须指定一个 android:id 为 “@android:id/list” 的ListView控件
+    若用户向修改list view的，可以在onCreateView(LayoutInflater, ViewGroup, Bundle)中进行修改。
+    当然，用户也可以在ListFragment的布局中包含其它的控件。
+         -->
+	<ListView
+	    android:id="@id/android:list"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:drawSelectorOnTop="false"
+	    />
+	
+</LinearLayout>
